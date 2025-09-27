@@ -14,6 +14,33 @@
 
   </head>
 <body>
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="plant.html">Plant options</a>
+
+    <!-- Toggler button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#plantNavbar"
+      aria-controls="plantNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="plantNavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <div class="container mt-5">
     <h1>Pick a plant by Graves</h1>
 
@@ -143,28 +170,72 @@
 <div class="container mt-5">
   <h2>Buttons and Button Groups</h2>
 
-  <!-- Toolbar wrapper -->
+  
   <div class="btn-toolbar" role="toolbar" aria-label="Letter button toolbar">
 
-    <!-- Group 1: Success buttons (plants with images) -->
+    <!-- Success buttons -->
     <div class="btn-group me-2" role="group" aria-label="Image plant buttons">
       <button type="button" class="btn btn-success">G</button>
       <button type="button" class="btn btn-success">V</button>
       <button type="button" class="btn btn-success">S</button>
     </div>
 
-    <!-- Group 2: Warning buttons -->
+    <!-- Warning buttons -->
     <div class="btn-group me-2" role="group" aria-label="Alert buttons">
       <button type="button" class="btn btn-warning">R</button>
       <button type="button" class="btn btn-warning">A</button>
     </div>
 
-    <!-- Group 3: Danger button -->
+    <!-- Danger button -->
     <div class="btn-group me-2" role="group" aria-label="Danger button">
       <button type="button" class="btn btn-danger">E</button>
     </div>
 
   </div>
+</div>
+
+<!-- DROP-DOWN -->
+<div class="container mt-3">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button"
+            id="pageDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false"
+            aria-label="Open page selection menu">
+      Pages
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="pageDropdownBtn">
+      <li><a class="dropdown-item" href="basic.html">Basic Page (basic.html)</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced Page (advanced.html)</a></li>
+    </ul>
+  </div>
+</div>
+<!-- FORM SECTION -->
+<div class="container mt-5">
+  <h2>Sign Up</h2>
+  <form>
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+
+    <!-- Plant -->
+    <div class="mb-3">
+      <label for="plantInput" class="form-label">Plant</label>
+      <input type="text" class="form-control" id="plantInput" placeholder="Enter your plant">
+    </div>
+
+    <!-- Newsletter checkbox -->
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" value="" id="newsletterCheck">
+      <label class="form-check-label" for="newsletterCheck">
+        Sign up for newsletter?
+      </label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
 
 
